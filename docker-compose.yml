@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  ui:
+    build:
+      context: .
+      dockerfile: apps/ui/Dockerfile
+    ports:
+      - "8080:80"
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    ports:
+      - "3001:3000"
+    env_file: apps/api/.env
+    depends_on:
+      - postgres
+
+  mana:
+    build:
+      context: .
+      dockerfile: apps/mana/Dockerfile
+    ports:
+      - "3002:3000"
+    env_file: apps/mana/.env
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: snapshot
+      POSTGRES_PASSWORD: snapshot
+      POSTGRES_DB: snapshot
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
