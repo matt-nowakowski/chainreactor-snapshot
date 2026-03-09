@@ -1,7 +1,7 @@
 {
-  "short_name": "Snapshot",
-  "name": "Snapshot",
-  "description": "Where decisions get made",
+  "short_name": "CR Governance",
+  "name": "Chainreactor Governance",
+  "description": "On-chain governance for your appchain",
   "iconPath": "favicon.svg",
   "icons": [
     {
@@ -12,6 +12,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#2563EB",
   "background_color": "#ffffff"
 }

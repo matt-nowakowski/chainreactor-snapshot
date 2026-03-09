@@ -28,7 +28,7 @@ const CONNECTOR_DETAILS: Record<ConnectorType, ConnectorDetail> = {
       name: APP_NAME,
       url: window.location.origin,
       description: 'Where decisions get made.',
-      icons: ['https://snapshot.box/favicon.svg']
+      icons: ['https://chainreactor.io/icon.svg']
     }
   },
   coinbase: {
@@ -39,7 +39,7 @@ const CONNECTOR_DETAILS: Record<ConnectorType, ConnectorDetail> = {
     options: {
       appName: APP_NAME,
       appChainIds: [1],
-      appLogoUrl: 'https://snapshot.box/favicon.svg'
+      appLogoUrl: 'https://chainreactor.io/icon.svg'
     }
   },
   gnosis: {
@@ -58,8 +58,8 @@ const CONNECTOR_DETAILS: Record<ConnectorType, ConnectorDetail> = {
       dappName: APP_NAME,
       argentMobileOptions: {
         dappName: APP_NAME,
-        url: 'https://snapshot.box',
-        icons: ['https://snapshot.box/favicon.svg']
+        url: 'https://chainreactor.io',
+        icons: ['https://chainreactor.io/icon.svg']
       }
     }
   },

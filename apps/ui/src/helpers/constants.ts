@@ -7,7 +7,7 @@ import {
   VoteTypeInfo
 } from '@/types';
 
-export const APP_NAME = 'Snapshot';
+export const APP_NAME = 'Chainreactor Governance';
 
 export const SIDEKICK_URL = 'https://sh5.co';
 

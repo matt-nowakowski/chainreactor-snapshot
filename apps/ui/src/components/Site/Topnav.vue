@@ -13,7 +13,7 @@ const { toggleTheme, currentTheme } = useTheme();
       >
         <div class="flex items-center space-x-2.5">
           <IC-snapshot class="size-[32px]" />
-          <span class="mb-1">snapshot</span>
+          <span class="mb-1">chainreactor</span>
         </div>
       </AppLink>
     </div>
@@ -25,18 +25,6 @@ const { toggleTheme, currentTheme } = useTheme();
       </li>
       <li>
         <AppLink :to="{ name: 'site-ecosystem' }">Ecosystem</AppLink>
-      </li>
-      <li>
-        <AppLink to="https://docs.snapshot.box">
-          Developers
-          <IH-arrow-sm-right class="inline-block -rotate-45" />
-        </AppLink>
-      </li>
-      <li>
-        <AppLink to="https://snapshot.mirror.xyz">
-          Blog
-          <IH-arrow-sm-right class="inline-block -rotate-45" />
-        </AppLink>
       </li>
     </ul>
     <div class="shrink-0 space-x-3 items-center flex">
